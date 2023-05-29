@@ -1,0 +1,40 @@
+@import "../../theme/variables.scss";
+
+.Header {
+    &_wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: $base-unit;
+        width: 100%;
+        margin-bottom: $base-unit * 2;
+
+        .theme_setter {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            font-size: small;
+            font-weight: 500;
+        }
+    }
+
+    &_navigation_wrapper {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .nav {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            opacity: 0.5;
+            transition: 0.2s;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}

@@ -1,0 +1,53 @@
+@import "../../theme/variables.scss";
+
+.Jokes {
+    &_wrapper {
+        display: flex;
+        flex-direction: row;
+        margin: $base-unit * 2 0;
+
+        h5 {
+            font-weight: 400;
+        }
+
+        > * + * {
+            border: 0 solid lighten($color: $color-black, $amount: 80);
+            border-left-width: 1px;
+        }
+    }
+    &_title {
+        flex: 1;
+        padding: $base-unit;
+    }
+    &_author {
+        flex: 2;
+        padding: $base-unit;
+    }
+    &_createdDate {
+        flex: 2;
+        padding: $base-unit;
+
+        li {
+            text-align: center;
+        }
+    }
+    &_views {
+        flex: 1;
+        padding: $base-unit;
+        
+        li {
+            text-align: center;
+        }
+
+        .view_container {
+            width: fit-content;
+            padding: $base-unit;
+            border-radius: $base-unit - 4;
+            margin: .3rem;
+
+            h4 {
+                margin: 0;
+            }
+        }
+    }
+}

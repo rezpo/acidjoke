@@ -1,0 +1,23 @@
+@import "./variables.scss";
+
+._wrapper {
+    background-color: $color-almost-white;
+    height: 100vh;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    span,
+    a,
+    strong,
+    label {
+        color: $color-dark-blue;
+    }
+
+    svg {
+        stroke: $color-dark-blue;
+    }
+}

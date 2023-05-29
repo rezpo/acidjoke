@@ -1,0 +1,14 @@
+@import "../../theme/variables.scss";
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    button {
+        font-size: 2rem;
+        background-color: $color-dark-blue;
+        color: $color-almost-white;
+    }
+}

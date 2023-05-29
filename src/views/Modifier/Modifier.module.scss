@@ -1,0 +1,20 @@
+@import "../../theme/variables.scss";
+
+.Modifier {
+    &_wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        height: 100%;
+
+        .form {
+            &_wrapper {
+                padding: $base-unit * 3;
+                border: 2px solid $color-black;
+                border-radius: $base-unit * 2;
+                width: 50%;
+            }
+        }
+    }
+}

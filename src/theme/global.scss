@@ -1,0 +1,48 @@
+@import "./variables.scss";
+
+*,
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    color: $color-black;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto",
+        "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans",
+        "Helvetica Neue", sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+input {
+    border: 2px solid $color-black;
+    border-radius: $base-unit / 1.3;
+    padding: $base-unit $base-unit * 1.2;
+}
+
+button {
+    border: none;
+    padding: $base-unit $base-unit * 2;
+    border-radius: $base-unit;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+button[type="submit"] {
+    background-color: deepskyblue;
+}

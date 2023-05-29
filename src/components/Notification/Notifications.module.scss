@@ -1,0 +1,54 @@
+@import "../../theme/variables.scss";
+
+.Notification {
+    &_wrapper {
+        position: fixed;
+        padding: $base-unit;
+        width: 100%;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        transition: 0.2s ease-in-out;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        z-index: 99999;
+
+        &.open {
+            opacity: 1 !important;
+            height: 50px !important;
+        }
+
+        &.close {
+            opacity: 0;
+            height: 0;
+        }
+
+        &.warning {
+            background-color: darksalmon;
+        }
+
+        &.info {
+            background-color: cyan;
+        }
+
+        &.success {
+            background-color: cornflowerblue;
+        }
+
+        &.error {
+            background-color: crimson;
+        }
+
+        .close_button {
+            opacity: 0.5;
+            cursor: pointer;
+            transition: 0.2s ease-in-out;
+
+            &:hover {
+                opacity: 1;
+            }
+        }
+    }
+}
